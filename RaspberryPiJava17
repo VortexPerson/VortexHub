@@ -1,0 +1,12 @@
+FIRSTLY OPEN TERMINAL
+THEN RUN THE COMMANDS ONE AFTER ANOTHER
+
+sudo su
+
+tar -zxf  OpenJDK17U-jdk_arm_linux_hotspot_17.0.1_12.tar.gz -C /opt/jdk
+
+ls /opt/jdk
+
+update-alternatives --install /usr/bin/java java /opt/jdk/jdk-17.0.1+12/bin/java 100
+
+update-alternatives --install /usr/bin/javac javac /opt/jdk/jdk-17.0.1+12/bin/javac 100
