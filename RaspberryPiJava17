@@ -1,19 +1,20 @@
 FIRSTLY OPEN TERMINAL
 THEN RUN THE COMMANDS ONE AFTER ANOTHER
+updated for new jdk
 
 sudo su
 
-wget https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.1%2B12/OpenJDK17U-jdk_arm_linux_hotspot_17.0.1_12.tar.gz
+wget https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz
 
-tar xzfv OpenJDK17U-jdk_arm_linux_hotspot_17.0.1_12.tar.gz
+tar xzfv OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz
 
-tar -zxf  OpenJDK17U-jdk_arm_linux_hotspot_17.0.1_12.tar.gz -C /opt/jdk
+tar -zxf  OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz -C /opt/jdk
 
 ls /opt/jdk
 
-sudo update-alternatives --install "/usr/bin/java" "java" "/opt/jdk/jdk-17.0.1+12/bin/java" 1  
+sudo update-alternatives --install "/usr/bin/java" "java" "/opt/jdk/jdk-17.0.1+35/bin/java" 1  
 
-sudo update-alternatives --set java /opt/jdk/jdk-17.0.1+12/bin/java
+sudo update-alternatives --set java /opt/jdk/jdk-17.0.1+35/bin/java
 
 now just run the programs like normal! (ie: java -jar spigotserver.jar)
 
