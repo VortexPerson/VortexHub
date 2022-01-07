@@ -12,9 +12,9 @@ tar -zxf  OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz -C /opt/jdk
 
 ls /opt/jdk
 
-sudo update-alternatives --install "/usr/bin/java" "java" "/opt/jdk/jdk-17.0.1+35/bin/java" 1  
+sudo update-alternatives --install "/usr/bin/java" "java" "/opt/jdk/jdk-17+35/bin/java" 1  
 
-sudo update-alternatives --set java /opt/jdk/jdk-17.0.1+35/bin/java
+sudo update-alternatives --set java /opt/jdk/jdk-17+35/bin/java
 
 now just run the programs like normal! (ie: java -jar spigotserver.jar)
 
